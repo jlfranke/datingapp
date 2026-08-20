@@ -32,6 +32,10 @@
         "@schematics/angular:pipe": {
           "skipTests": true,
           "path": "src/core/pipe"
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true,
+          "path": "src/shared/directives"
         }
       },
       "root": "",
@@ -90,6 +94,9 @@
             "development": {
               "buildTarget": "client:build:development"
             }
+          },
+          "options": {
+            "ssl": true
           },
           "defaultConfiguration": "development"
         },
